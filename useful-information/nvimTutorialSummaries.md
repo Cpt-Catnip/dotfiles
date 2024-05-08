@@ -12,13 +12,13 @@ $ nvim FILENAME
 ```
 3. To exit Neovim type: `<Esc>` `:q!` `<Enter>` to trash all changes. OR type: `<Esc>` `:wq` `<Enter>` to save the changes.
 
-4. To delete the character at the cursor type: `x`{normal}
+4. To delete the character at the cursor type: `x`
 
 5. To insert or append text type:
     * `i` insert text `<Esc>`     insert before the cursor.
 	* `A` append text `<Esc>`     append after the line.
 
-NOTE: Pressing `<Esc>`{normal} will place you in Normal mode or will cancel	an unwanted and partially completed command.
+NOTE: Pressing `<Esc>` will place you in Normal mode or will cancel	an unwanted and partially completed command.
 
 # Lesson 2 SUMMARY
 
@@ -33,16 +33,16 @@ operator   [number]   motion
 ```
 
 where:
-* operator - is what to do, such as [d](d) for delete
+* operator - is what to do, such as d for delete
 * [number] -  is an optional count to repeat the motion
 * motion   -   moves over the text to operate on, such as:
-    * [w](w) (word),
-    * [$]($) (to the end of line), etc.
+    * w (word),
+    * $ (to the end of line), etc.
 
-6. To move to the start of the line use a zero: [0](0)
-7. To undo previous actions, type:            `u`{normal}  (lowercase u)
-    To undo all the changes on a line, type:   `U`{normal}  (capital U)
-    To undo the undo's, type:                  `<C-r>`{normal}
+6. To move to the start of the line use a zero: `0`
+7. To undo previous actions, type:            `u`  (lowercase u)
+8. To undo all the changes on a line, type:   `U`  (capital U)
+9. To undo the undo's, type:                  `<C-r>`
 
 # Lesson 3 SUMMARY
 
@@ -54,8 +54,8 @@ where:
     character you want to have there.
 
  3. The [change operator](c) allows you to change from the cursor to where
-    the motion takes you. Type `ce`{normal} to change from the cursor to the
-    end of the word, `c$`{normal} to change to the end of a line, etc.
+    the motion takes you. Type `ce` to change from the cursor to the
+    end of the word, `c$` to change to the end of a line, etc.
 
  4. The format for change is:
 
@@ -63,19 +63,19 @@ where:
 
 # Lesson 4 SUMMARY
 
- 1. `<C-g>`{normal}     displays your location and the file status.
-    `G`{normal}         moves to the end of the file.
-    number `G`{normal} moves to that line number.
-    `gg`{normal}        moves to the first line.
+ 1. `<C-g>`     displays your location and the file status.
+    `G`         moves to the end of the file.
+    number `G` moves to that line number.
+    `gg`        moves to the first line.
 
- 2. Typing `/`{normal} followed by a phrase searches FORWARD for the phrase.
-    Typing `?`{normal} followed by a phrase searches BACKWARD for the phrase.
-    After a search type `n`{normal} to find the next occurrence in the same
-    direction or `N`{normal} to search in the opposite direction.
-    `<C-o>`{normal} takes you back to older positions, `<C-i>`{normal} to
+ 2. Typing `/` followed by a phrase searches FORWARD for the phrase.
+    Typing `?` followed by a phrase searches BACKWARD for the phrase.
+    After a search type `n` to find the next occurrence in the same
+    direction or `N` to search in the opposite direction.
+    `<C-o>` takes you back to older positions, `<C-i>` to
     newer positions.
 
- 3. Typing `%`{normal} while the cursor is on a (,),[,],{, or } goes to its
+ 3. Typing `%` while the cursor is on a (,),[,],{, or } goes to its
     match.
 
  4. To substitute new for the first old in a line type
@@ -103,8 +103,8 @@ where:
  1. [:!command](:!cmd) executes an external command.
 
      Some useful examples are:
-     `:!ls`{vim}                    - shows a directory listing
-     `:!rm FILENAME`{vim}           - removes file FILENAME
+     `:!ls`                    - shows a directory listing
+     `:!rm FILENAME`           - removes file FILENAME
 
  2. [:w](:w) FILENAME              writes the current Neovim file to disk with
                              name FILENAME.
@@ -120,17 +120,17 @@ where:
 
 # Lesson 6 SUMMARY
 
- 1. Type `o`{normal} to open a line BELOW the cursor and start Insert mode.
-    Type `O`{normal} to open a line ABOVE the cursor.
+ 1. Type `o` to open a line BELOW the cursor and start Insert mode.
+    Type `O` to open a line ABOVE the cursor.
 
- 2. Type `a`{normal} to insert text AFTER the cursor.
-    Type `A`{normal} to insert text after the end of the line.
+ 2. Type `a` to insert text AFTER the cursor.
+    Type `A` to insert text after the end of the line.
 
- 3. The `e`{normal} command moves to the end of a word.
+ 3. The `e` command moves to the end of a word.
 
- 4. The `y`{normal} operator copies text, `p`{normal} pastes it.
+ 4. The `y` operator copies text, `p` pastes it.
 
- 5. Typing a capital `R`{normal} enters Replace mode until `<Esc>`{normal} is
+ 5. Typing a capital `R` enters Replace mode until `<Esc>` is
      pressed.
 
  6. Typing "[:set](:set) xxx" sets the option "xxx". Some options are:
@@ -151,17 +151,17 @@ where:
 
 # Lesson 7 SUMMARY
 
- 1. Type `:help`{vim}
-    or press `<F1>`{normal} or `<Help>`{normal} to open a help window.
+ 1. Type `:help`
+    or press `<F1>` or `<Help>` to open a help window.
 
- 2. Type `:help TOPIC`{vim} to find help on TOPIC.
+ 2. Type `:help TOPIC` to find help on TOPIC.
 
- 3. Type `<C-w><C-w>`{normal} to jump to another window
+ 3. Type `<C-w><C-w>` to jump to another window
 
- 4. Type `:q`{vim} to close the help window
+ 4. Type `:q` to close the help window
 
  5. Create an init.vim startup script to keep your preferred settings.
 
- 6. While in command mode, press `<C-d>`{normal} to see possible completions.
-    Press `<Tab>`{normal} to use one completion.
+ 6. While in command mode, press `<C-d>` to see possible completions.
+    Press `<Tab>` to use one completion.
 

@@ -3,3 +3,4 @@ homebrew requirements
 - ripgrep
 - lazygit (brew install jesseduffield/lazygit/lazygit)
 - xclip
+- wget

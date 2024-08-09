@@ -4,3 +4,4 @@ homebrew requirements
 - lazygit (brew install jesseduffield/lazygit/lazygit)
 - xclip
 - wget
+- luarocks

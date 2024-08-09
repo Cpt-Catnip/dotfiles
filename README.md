@@ -3,7 +3,7 @@
 This is where I'll store all the config files for the various tools I use! So far, I have configs for: 
 
 * [Neovim](./.config/nvim)
-* [Kitty](./.config/kitty)
+* [WezTerm](./tilde/.wezterm.lua)
 
 ## How to use
 

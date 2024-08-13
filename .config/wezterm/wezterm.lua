@@ -6,7 +6,14 @@ config.color_scheme = "AdventureTime"
 config.font = wezterm.font("GohuFont uni14 Nerd Font Mono")
 config.font_size = 16
 
-config.window_decorations = "RESIZE"
+config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
+
+config.window_padding = {
+	left = 0,
+	right = 0,
+	top = 0,
+	bottom = 0,
+}
 -- }}
 
 -- keymaps {{

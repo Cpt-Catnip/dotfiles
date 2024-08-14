@@ -1,4 +1,4 @@
-return {
+local config = {
 
   { -- Linting
     'mfussenegger/nvim-lint',
@@ -53,3 +53,5 @@ return {
     end,
   },
 }
+
+return {}

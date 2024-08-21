@@ -4,6 +4,7 @@ This is where I'll store all the config files for the various tools I use! So fa
 
 * [Neovim](./.config/nvim)
 * [WezTerm](./.config/wezterm)
+* [Zed](./.config/zed)
 
 ## How to use
 

@@ -27,5 +27,8 @@
   },
   "buffer_font_features": {
     "calt": false
+  },
+  "vim": {
+    "use_system_clipboard": "on_yank"
   }
 }

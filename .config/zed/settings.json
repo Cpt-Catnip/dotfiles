@@ -23,7 +23,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Gruvbox Dark Hard"
+    "dark": "Ayu Dark"
   },
   "buffer_font_features": {
     "calt": false

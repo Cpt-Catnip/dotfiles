@@ -55,6 +55,14 @@ require('lazy').setup({
       return not vim.g.vscode
     end,
   },
+
+  -- only import these plugins if in VSCode
+  {
+    import = 'plugins_vscode',
+    cond = function()
+      return vim.g.vscode
+    end,
+  },
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the

@@ -45,7 +45,16 @@ require('lazy').setup({
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
-  { import = 'plugins' },
+  -- always import these plugins
+  { import = 'plugins', cond = true },
+
+  -- only import these plugins if not in VSCode
+  {
+    import = 'plugins_notvscode',
+    cond = function()
+      return not vim.g.vscode
+    end,
+  },
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the

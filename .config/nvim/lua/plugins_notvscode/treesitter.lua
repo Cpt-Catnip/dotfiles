@@ -16,7 +16,7 @@ return { -- Highlight, edit, and navigate code
     },
     indent = { enable = false, disable = {} },
   },
-  config = function(_, opts)
+  configs = function(_, opts)
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
 
     -- Prefer git instead of curl in order to improve connectivity in some environments

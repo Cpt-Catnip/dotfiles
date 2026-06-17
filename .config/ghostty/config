@@ -2,3 +2,6 @@ font-family = GohuFont uni14 Nerd Font Mono
 theme = Gruvbox Material
 font-size = 16
 shell-integration-features = ssh-terminfo,ssh-env
+working-directory = home
+window-inherit-working-directory = false
+tab-inherit-working-directory = false
